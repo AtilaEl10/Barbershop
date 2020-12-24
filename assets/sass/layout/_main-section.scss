@@ -1,0 +1,82 @@
+.main {
+    margin: 73px 101px;
+    &__parrafo {
+        &-date {
+            line-height: $x-large;
+            padding-bottom: $x-large;
+            color: $nickel;
+        }
+        &-cont {
+            padding-bottom: $x-large;
+        }
+        &-boton {
+            border-radius: 25px;
+            margin-right: 30px;
+        }
+    }
+}
+
+.article {
+    align-items: center;
+    &__foto {
+        border-radius: 50%;
+    }
+    &__name {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__info {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.paginacion {
+    height: 134px;
+    background-color: $platinum;
+}
+.pagination {
+    padding-top: 47px;
+    background-color:$platinum;
+}
+.page-link {
+    color:$nickel;
+}
+.page-item:first-child .page-link {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media screen and (max-width: 800px){
+    .article {
+        text-align: center;
+        &__name {
+            margin-top: 20px;
+        }
+        &__info {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main {
+        margin: 50px 21px;
+        &__parrafo {
+            letter-spacing: -1px;
+            &-boton {
+                font-size: 13px;
+                border-radius: 25px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .article__foto {
+        height: 120px;
+    }
+}
+

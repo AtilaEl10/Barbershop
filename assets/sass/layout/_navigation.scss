@@ -1,0 +1,25 @@
+.navbar {
+    height: 96px;
+    background-color: $eerie-black;
+    &__logo {
+        height: 46px;
+        width: 79px;
+        margin-top: 26px;
+        margin-bottom: 24px;
+    }
+    &__list {
+        font-weight: $fs-regular;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar {
+        &__container {
+            margin: 10px;
+        }
+        &__logo {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
